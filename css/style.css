@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.h1{
+align-items: center;
+}
+
+.h2{
+    align-items: center;
+}
+
+.animacao1{
+    width: 70vw;
+    height: 250px;
+    margin: auto;
+    border-radius: 20px;
+    border: 1px gray solid;
+    
+}
+
+.quadrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    border-color: black;
+    background-color: red;
+    border-width: 1px blue solid;
+    transition: border-width 3s,background-color 3s, color 3s, left 10s, border-radius 2s;
+    position: relative;
+    left: 0;
+    
+}
+
+.quadrado:hover{
+    color: crimson;
+    background-color: blue;
+    width: 100px;
+    left:63vw;
+    border-radius: 100%; 
+    border-color: brown;
+}
+
+
+/* .quadrado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: width 4s, font-size 4s;
+    transition-delay: 5s;
+
+}
+
+.quadrado:hover{
+    width: 70vw;
+    font-size: 36px;
+}
+ */
+
+ .animacao2{
+    width: 70vw;
+    height: 250px;
+    margin: auto;
+    border-radius: 20px;
+    border: 1px gray solid;
+    
+}
+
+.quadrado2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    border-color: black;
+    background-color: red;
+    position: relative;
+    animation-name: esquerda-direita;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+
+}
+@keyframes esquerda-direita {
+    from{left: 0px}
+    to{left:1245px; background-color: aqua; background-color: blue; background-color: chartreuse;background-color: chocolate;}
+ 
+}
