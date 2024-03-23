@@ -9,6 +9,7 @@ align-items: center;
 
 .h2{
     align-items: center;
+    padding: 16px 36px;
 }
 
 .animacao1{
@@ -97,3 +98,52 @@ align-items: center;
     to{left:1245px; background-color: aqua; background-color: blue; background-color: chartreuse;background-color: chocolate;}
  
 }
+
+a{
+    
+}
+
+.btn{
+    text-decoration: none;
+    display: flex;
+    width: 200px;
+    padding: 16px 32px;
+    font-size: 1.5rem;
+    color: white;
+    box-shadow:0 6px 20px 0 rgba(0,0,0,0.25);
+}
+
+.btn-doar{
+    display: inline-block;
+    background-color: brown;
+    width: 100px;
+    transition: width 2s ease, background-color 2s;
+    text-align: center;
+    
+}
+
+.btn-doar::after{
+    font-family: "Font Awesome 6 free";
+    content: "\f004";
+    margin-left: 8px;
+    position: relative;
+    left: 70px;
+    transition: left 1s ease-out, opacity 1s ease;
+    opacity: 0;
+}
+
+.btn-doar:hover{
+    background-color: red;
+    width:280px;
+}
+
+.btn-doar:hover::after{
+    left: 0;
+    opacity: 1;
+    
+    
+}
+
+
+/* propriedades para animar */
+/* left */
